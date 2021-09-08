@@ -10,7 +10,9 @@
     box-sizing: border-box;
 }
 body{
+    color: #fff;
     background-color: var(--black);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 :root{
     font-size: 62.5%;
@@ -32,6 +34,9 @@ header{
     height: 68px;
     display: flex;
     align-items: center;
+    position: absolute;
+    z-index: 9;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(255, 255, 255, 0));
 }
 .cabecalho-left{
     width: 40%;
@@ -51,15 +56,11 @@ nav{
     align-items: center;
     justify-content: space-evenly;
 }
-.netflix-sans-font-loaded {
-    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
-}
-
 nav a{
-    font-family: 'Netflix Sans';
     text-decoration: none;
     color: white;
     font-size: 1.4rem;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .secundary-navegation{
     width: 140px;
@@ -83,5 +84,76 @@ nav a{
 }
 .icons span a{
     color: #fff;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/non-stop-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
+}
+.logo-abd-next{
+    width: 100%;
+    max-width: 468px;
+    height: 404px;
+
+}
+.titlewrapper{
+    width: 100%;
+}
+.titlewrapper .title-logo{
+    width: 100%;
+    margin-top: 70px;
+}
+.preview-modal{
+    width: 100%;
+    padding: 20px 0;
+}
+.preview-modal-synopsis{
+    font-size: 1.8rem;
+}
+.billboard-links{
+    width: 100%;
+    display: flex;
+}
+.playLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 132px;
+    line-height: 2.4rem;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--black);
+    margin-right: 10px;
+}
+.play-icon{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.span-link{
+    font-weight: bold;
+}
+.button-informacion{
+    width: 200px;
+    background-color: rgba(109,109,110,0.7);;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.button-informacion:hover{
+    background-color: rgba(109,109,110,0.4);
 }
 
